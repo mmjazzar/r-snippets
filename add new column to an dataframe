@@ -1,0 +1,20 @@
+# add new column to an dataframe
+# source: http://stackoverflow.com/questions/19508256/how-to-add-new-column-to-an-dataframe-to-the-front-not-end
+
+
+df <- data.frame(b = c(1, 1, 1), c = c(2, 2, 2), d = c(3, 3, 3))
+df
+##   b c d
+## 1 1 2 3
+## 2 1 2 3
+## 3 1 2 3
+
+df <- data.frame(a = c(0, 0, 0), df)
+df
+##   a b c d
+## 1 0 1 2 3
+## 2 0 1 2 3
+## 3 0 1 2 3
+
+# or you can use 
+cbind(a = 0, df)
