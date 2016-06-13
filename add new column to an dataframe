@@ -1,6 +1,7 @@
 # add new column to an dataframe
 # source: http://stackoverflow.com/questions/19508256/how-to-add-new-column-to-an-dataframe-to-the-front-not-end
-
+# or adding a column between two columns
+# source: http://stackoverflow.com/questions/15956931/how-to-add-a-new-column-between-other-dataframe-columns?rq=1
 
 df <- data.frame(b = c(1, 1, 1), c = c(2, 2, 2), d = c(3, 3, 3))
 df
