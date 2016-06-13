@@ -1,4 +1,6 @@
 # r-snippets
 
-1- Reading and Writing CSV.
-2- Removing blank or NA.
+- Reading and Writing CSV.
+- Removing blank or NA.
+- Convert data.frame columns from factors to characters
+
