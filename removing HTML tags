@@ -1,0 +1,3 @@
+# removing HTML tags
+mydata$description <- gsub("<[^>]+>", "", mydata$description)
+mydata$job_requirements <- gsub("<[^>]+>", "", mydata$job_requirements)
