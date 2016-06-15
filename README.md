@@ -1,4 +1,5 @@
-# r-snippets
+ +[![Stories in Ready](https://badge.waffle.io/mgazzar/r-snippets.png?label=ready&title=Ready)](https://waffle.io/mgazzar/r-snippets) 
+# R-snippets
 
 - Reading and Writing CSV.
 - Removing blank or NA.
