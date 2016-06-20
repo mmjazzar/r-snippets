@@ -1,0 +1,6 @@
+mydata <- gsub("[^0-9A-Za-z///' ]", "", mydata)
+
+
+#4 removing empty data after chaging characters
+mydata<-mydata[!(mydata == ""),]
+
