@@ -1,0 +1,5 @@
+#remove commas from numbers
+for (i in 5: 28)
+{
+  load[,i] = gsub(",","",load[,i])
+}
