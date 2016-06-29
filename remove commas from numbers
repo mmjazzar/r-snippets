@@ -1,0 +1,11 @@
+
+#remove commas from numbers
+for (i in 5: 28)
+{
+  load[,i] = gsub(",","",load[,i])
+}
+#strings to numbers
+for(i in 5:28)
+{
+  load[,i] = as.numeric(load[,i])
+}
