@@ -1,0 +1,31 @@
+library(shiny)
+
+#define UI for the applciation
+shinyUI(fluidPage(
+  #Header or page Panel
+  titlePanel(h4(title="Wuzzuf", align="center")),
+  sidebarLayout(
+    #sidebar panel
+    sidebarPanel(
+      
+      selectInput("var","select the var from the iris dataset", choices = c("spel.lenth" =1, "spel.width" =2 , "petal.lenh"=3 ,"maged"=4)),
+      br(),
+      sliderInput("bins","select from",min = 5,max = 25,value = 15),
+      br(),
+      radioButtons("color","select",choices = c("G","R","B"), selected = "R")
+      
+    ), #end of sidepanel
+  #end of sidelayout 
+mainPanel(
+  tabsetPanel(type= "tab",
+              tabPanel("summary" , h2("ssss")),
+              tabPanel("summary2",h2("sssssss")),
+              tabPanel("summary3", tableOutput("mydata2"))
+    
+    
+  ),
+plotOutput("myhist")
+  )#end of mainpanel
+
+  
+)))
