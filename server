@@ -1,0 +1,13 @@
+library(shiny)
+
+shinyServer(
+  function(input, output){
+    
+    output$mydata2 <- renderTable( head(mydata))
+    output$myhist <- renderPlot({colm <- as.numeric(input$var)
+    hist(z[,colm] , breaks =seq(0,max(z,colm,l =input$bins+1)))
+    })
+  }#end of function
+  
+  
+)#end of shinyserver
