@@ -3,12 +3,12 @@
 
 You can find several code snippets for data visualization and  specific function.
 
-#Data cleaning
+###Data cleaning
 
 - Removing blank or NA.
 - Remove an entire column from a data.frame
 
-#Data Frames.
+###Data Frames.
 
 - Reading and Writing CSV.
 - Convert data.frame columns from factors to characters
