@@ -1,0 +1,7 @@
+# Time Series in r, change monthly data to quarterly
+
+
+
+ monthly <- ts(mydata,start=c(2000,1),frequency=12)
+ quarterly <- aggregate(monthly, nfrequency=4)
+
