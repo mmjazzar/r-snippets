@@ -1,0 +1,1 @@
+regression <- lm(formula = GS10_ts ~ GDPI_ts)
