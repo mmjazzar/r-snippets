@@ -1,3 +1,4 @@
+# the target of the code is to downliad a sankey chart as PNG insted of webpage.
 # loading libraries
 library(googleVis)
 library(dplyr)
