@@ -14,3 +14,17 @@ Q1 <- z[!duplicated(z), ]
 
 #Specify the condition k = 17
 print(k <- z %>% filter(((mydata$fraud =='(suspicious_ip)(suspicious_dfp)' ) )))
+
+
+
+# another example
+# getting retweeted tweets 
+
+tweets <- searchTwitter("maged", n=500)
+
+#convert tweets to a data frame
+tweets.df <- twListToDF(tweets)
+
+# getting retweeted only
+k <- subset(tweets.df, tweets.df$isRetweet ==TRUE )
+
