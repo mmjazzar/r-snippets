@@ -117,3 +117,14 @@ comparison.cloud(tdm,colors = brewer.pal(nemo, "Dark2"),
                  
                  scale = c(2.5,.5), random.order = FALSE, title.size = 1.5)
 
+                       
+#getting  retweeted tweets
+k <- subset(tweets.df, tweets.df$isRetweet ==TRUE )
+nrow(k)
+k1 <- k[order((k$retweetCount), decreasing = TRUE), ]
+
+# get fav tweets
+f <- subset(tweets.df, tweets.df$favoriteCount > 1 )
+nrow(f)
+f1 <- f[order((f$favoriteCount), decreasing = TRUE), ]
+
