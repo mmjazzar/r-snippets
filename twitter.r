@@ -18,10 +18,10 @@ install_url("https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar
 library(slam)
 
 #Set authentication with Twitter. Copy keys generated in step-1
-api_key <- "k8xGabURJtISO9IoEAOW2Nkh0"
-api_secret <- "wmBneAPduaofYFFIzL8tzysJ4MSTJZhwA8EFAdAyPT4LYxKavk"
-access_token <- "3198713035-wDxpfC9gE7ZHkd1BOF9d0M9HgFUnoXSTi1cqQ5e"
-access_token_secret <- "CyENdzmJ8skhDxcUY9wWQZWrop4hC1QY5JzyNIy5WAdPg"
+api_key <- ""
+api_secret <- ""
+access_token <- ""
+access_token_secret <- ""
 setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
 
 
