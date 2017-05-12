@@ -128,3 +128,32 @@ f <- subset(tweets.df, tweets.df$favoriteCount > 1 )
 nrow(f)
 f1 <- f[order((f$favoriteCount), decreasing = TRUE), ]
 
+### adding more features
+                       
+# get top users tweets
+top_authors <- tweets_by_author %>% arrange(desc(avg_score)) %>%  head(10)
+
+tweets_top_authors <- tweets.df %>% filter()
+
+tweets_top_authors <- subset(tweets.df, tweets.df$screenName %in% top_authors$`tweets.df$screenName`)
+
+tweets_top_authors$text
+
+# score of top users
+ggplot(tweets_top_authors) +
+  geom_point(aes(score, retweetCount, fill = screenName), size = 5, shape = 21) +
+  theme_bw(15) +
+  scale_fill_brewer("Author", type = "qual", palette = 3) +
+  ggtitle("Score of top users") +
+  xlab("# score") + ylab("# retweets")
+
+# And let's see them again, in perspective to all tweets
+ggplot(tweets.df) +
+  geom_jitter(aes(score, retweetCount), size = 3, shape = 21, fill = "#444444", alpha=0.4) +
+  theme_bw(15) +
+  geom_point(data = tweets_top_authors,
+             aes(score, retweetCount, fill = screenName), size = 6, shape = 21) +
+  scale_fill_brewer("Author", type = "qual", palette = 3) +
+  xlab("# favorites") + ylab("# retweets") +
+  ggtitle("Score of them to all")
+
