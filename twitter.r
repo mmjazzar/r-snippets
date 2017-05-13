@@ -157,3 +157,9 @@ ggplot(tweets.df) +
   xlab("# favorites") + ylab("# retweets") +
   ggtitle("Score of them to all")
 
+###########################################################
+user <- getUser("RDataMining")
+user$toDataFrame()
+friends <- user$getFriends() # who this user follows
+followers <- user$getFollowers() # this user's followers
+followers2 <- followers[[1]]$getFollowers() # a follower's followers
