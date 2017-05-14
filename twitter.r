@@ -163,3 +163,60 @@ user$toDataFrame()
 friends <- user$getFriends() # who this user follows
 followers <- user$getFollowers() # this user's followers
 followers2 <- followers[[1]]$getFollowers() # a follower's followers
+
+                       
+                       
+############################### add score
+tweets.df$score <- tweets.df$favoriteCount + tweets.df$retweetCount * 2
+
+s <- tweets.df[order((tweets.df$score), decreasing = TRUE), ]
+
+
+# Most influnce users score
+p<-ggplot(data=s[1:5,], aes(x=screenName, y= score, fill = score)) +
+  geom_bar(stat="identity") +
+  theme_minimal()
+p
+
+
+
+### some table
+tweets_by_author <-  tweets.df %>% 
+  ddply(~ tweets.df$screenName, function(x) {
+    data.frame(num_tweets = nrow(x),
+               avg_favorites = mean(x$favoriteCount) %>% round(digits = 1),
+               avg_retweets = mean(x$retweetCount) %>% round(digits = 1),
+               avg_score = mean(x$score) %>% round(digits = 1)
+    )}) %>%  arrange(desc(avg_score)) 
+
+
+tweets_by_author %>% arrange(desc(num_tweets)) %>% head(10)
+
+
+# get top users tweets
+top_authors <- tweets_by_author %>% arrange(desc(avg_score)) %>%  head(10)
+
+tweets_top_authors <- tweets.df %>% filter()
+
+tweets_top_authors <- subset(tweets.df, tweets.df$screenName %in% top_authors$`tweets.df$screenName`)
+
+tweets_top_authors$text
+
+# score of top users
+ggplot(tweets_top_authors) +
+  geom_point(aes(score, retweetCount, fill = screenName), size = 5, shape = 21) +
+  theme_bw(15) +
+  scale_fill_brewer("Author", type = "qual", palette = 3) +
+  ggtitle("Score of top users") +
+  xlab("# score") + ylab("# retweets")
+
+# And let's see them again, in perspective to all tweets
+ggplot(tweets.df) +
+  geom_jitter(aes(score, retweetCount), size = 3, shape = 21, fill = "#444444", alpha=0.4) +
+  theme_bw(15) +
+  geom_point(data = tweets_top_authors,
+             aes(score, retweetCount, fill = screenName), size = 6, shape = 21) +
+  scale_fill_brewer("Author", type = "qual", palette = 3) +
+  xlab("# favorites") + ylab("# retweets") +
+  ggtitle("Score of them to all")
+
