@@ -15,15 +15,15 @@ if you have any comments. feel free to contact me at mmjazzar@ieee.org
 - [Removing blank or NA](https://github.com/mmjazzar/r-snippets/blob/master/removingNA.R).
 - [Remove an entire column from a data.frame](https://github.com/mmjazzar/r-snippets/blob/master/remove%20a%20specific%20column)
 - [Create Convert data.frame columns from factors to characters](https://github.com/mmjazzar/r-snippets/blob/master/Convert%20data.frame%20columns%20from%20factors%20to%20characters.r)
-- Create cleanString
-- Filter Data
-- remove a specific column
-- removing HTML tags
-- removing non-ASCII characters
+- [Create cleanString](https://github.com/mmjazzar/r-snippets/blob/master/cleanString)
+- [Filter Data](https://github.com/mmjazzar/r-snippets/blob/master/filter.r)
+- [remove a specific column](https://github.com/mmjazzar/r-snippets/blob/master/remove%20a%20specific%20column)
+- [removing HTML tags](https://github.com/mmjazzar/r-snippets/blob/master/removing%20HTML%20tags)
+- [removing non-ASCII characters](https://github.com/mmjazzar/r-snippets/blob/master/removing%20non-ASCII%20characters)
 
 ### Data Frames.
 
-- Reading and Writing CSV.
+- [Reading and Writing CSV](https://github.com/mmjazzar/r-snippets/blob/master/csv.md)
 - Convert data.frame columns from factors to characters
 - Adding new column to an dataframe
 - Create Remove an entire column from a data.frame
