@@ -24,17 +24,16 @@ if you have any comments. feel free to contact me at mmjazzar@ieee.org
 ### Data Frames.
 
 - [Reading and Writing CSV](https://github.com/mmjazzar/r-snippets/blob/master/csv.md)
-- Convert data.frame columns from factors to characters
-- Adding new column to an dataframe
-- Create Remove an entire column from a data.frame
-- Update add new column to an dataframe 
+- [Convert data.frame columns from factors to characters](https://github.com/mmjazzar/r-snippets/blob/master/Convert%20data.frame%20columns%20from%20factors%20to%20characters.r)
+- [Adding new column to an dataframe](https://github.com/mmjazzar/r-snippets/blob/master/add%20new%20column%20to%20an%20dataframe)
+- [Remove an entire column from a data.frame](https://github.com/mmjazzar/r-snippets/blob/master/Remove%20an%20entire%20column%20from%20a%20data.frame)
  
 ### Export results
-- Create csv
+- [Create csv](https://github.com/mmjazzar/r-snippets/blob/master/csv.md)
 
 
 ### Twitter 
-
+- [twitter script](https://github.com/mmjazzar/r-snippets/blob/master/twitter.r)
 
 ### Date
 - Create change monthly data to quarterly
