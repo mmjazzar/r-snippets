@@ -36,14 +36,14 @@ if you have any comments. feel free to contact me at mmjazzar@ieee.org
 - [twitter script](https://github.com/mmjazzar/r-snippets/blob/master/twitter.r)
 
 ### Date
-- Create change monthly data to quarterly
+- [Create change monthly data to quarterly](https://github.com/mmjazzar/r-snippets/blob/master/change%20monthly%20data%20to%20quarterly)
 
 
 ### visulization 
-- Create Second Y-Axis
-- sankey
+- [Create Second Y-Axis](https://github.com/mmjazzar/r-snippets/blob/master/Second%20Y-Axis.r)
+- [sankey charts](https://github.com/mmjazzar/r-snippets/blob/master/sankey.r)
 
 ### Analysis
-- ARIMA
-- regression
+- [ARIMA](https://github.com/mmjazzar/r-snippets/blob/master/arima.R)
+- [regression](https://github.com/mmjazzar/r-snippets/blob/master/regression)
 
