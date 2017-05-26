@@ -42,6 +42,8 @@ if you have any comments. feel free to contact me at mmjazzar@ieee.org
 ### visulization 
 - [Create Second Y-Axis](https://github.com/mmjazzar/r-snippets/blob/master/Second%20Y-Axis.r)
 - [sankey charts](https://github.com/mmjazzar/r-snippets/blob/master/sankey.r)
+- [chord diagram] ()
+- animated bouble charts
 
 ### Analysis
 - [ARIMA](https://github.com/mmjazzar/r-snippets/blob/master/arima.R)
