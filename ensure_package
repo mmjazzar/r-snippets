@@ -1,0 +1,18 @@
+#Identifying packages required  (Stanton 2013)
+Prepareapp<-function()
+{
+  EnsurePackage("twitteR")
+  EnsurePackage("stringr")
+  EnsurePackage("ROAuth")
+  EnsurePackage("RCurl")
+  EnsurePackage("ggplot2")
+  EnsurePackage("reshape")
+  EnsurePackage("tm")
+  EnsurePackage("RJSONIO")
+  EnsurePackage("wordcloud")
+  EnsurePackage("gridExtra")
+  EnsurePackage("lubridate")
+  EnsurePackage("plyr")
+}
+
+Prepareapp()
