@@ -48,4 +48,6 @@ if you have any comments. feel free to contact me at mmjazzar@ieee.org
 ### Analysis
 - [ARIMA](https://github.com/mmjazzar/r-snippets/blob/master/arima.R)
 - [regression](https://github.com/mmjazzar/r-snippets/blob/master/regression)
-
+- anova.
+- t-test.
+- R sequare.
