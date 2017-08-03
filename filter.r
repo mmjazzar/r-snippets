@@ -28,3 +28,9 @@ tweets.df <- twListToDF(tweets)
 # getting retweeted only
 k <- subset(tweets.df, tweets.df$isRetweet ==TRUE )
 
+# filter with loop
+for(i in 1:10) {
+  print(temp <-  newdata %>% filter((newdata$X == "" )))
+  dat <- rbind(temp,dat)
+}# end for
+
