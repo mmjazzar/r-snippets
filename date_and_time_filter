@@ -1,0 +1,12 @@
+require( lubridate )
+
+with( df , df[ hour( date_time ) >= 2 & hour( date_time ) < 5 , ] )
+
+#            date_time loc_id node  energy   kgco2
+#3 2009-02-27 02:05:05     87  103 6.40039 3.43701
+#4 2009-02-27 03:05:05     87  103 4.79883 2.57697
+#5 2009-02-27 04:05:05     87  103 4.10156 2.20254
+
+
+#resources
+# https://stackoverflow.com/questions/19420155/subset-rows-according-to-a-range-of-time
