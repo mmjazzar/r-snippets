@@ -1,4 +1,6 @@
+# Adjusting Arabic language
 
+Sys.setlocale("LC_CTYPE","Arabic_Saudi Arabia")
 #Following packages are being used so install these if not installed
 install.packages("twitteR")
 library(twitteR)
